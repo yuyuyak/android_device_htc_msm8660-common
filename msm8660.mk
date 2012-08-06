@@ -47,7 +47,12 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio_policy.msm8660 \
     audio.primary.msm8660 \
-    libaudioutils
+    audio.usb.default \
+    audio.policy.conf
+
+PRODUCT_COPY_FILES += \
+    device/htc/msm8660-common/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    device/htc/msm8660-common/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Omx
 PRODUCT_PACKAGES += \
