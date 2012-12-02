@@ -99,15 +99,9 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
     device/htc/msm8660-common/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
 
-# Common Qualcomm scripts
+# Thermal configuration
 PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
-    device/htc/msm8660-common/prebuilt/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh
-
-# We have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
-
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+    device/htc/msm8660-common/configs/thermald.conf:system/etc/thermald.conf
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
