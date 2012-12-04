@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
+    com.android.future.usb.accessory \
+    lights.msm8660
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
