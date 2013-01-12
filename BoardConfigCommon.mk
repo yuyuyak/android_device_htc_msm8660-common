@@ -73,6 +73,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/htc/msm8660-common/bluetoo
 # Camera
 CAMERA_USES_SURFACEFLINGER_CLIENT_STUB := true
 BOARD_NEEDS_MEMORYHEAPPMEM := true
+BOARD_HAVE_HTC_FFC := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -92,8 +93,6 @@ BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
 
 # Lights
 TARGET_PROVIDES_LIBLIGHTS := true
-
-BOARD_HAVE_HTC_FFC := true
 
 # Filesystem
 BOARD_VOLD_MAX_PARTITIONS := 36
