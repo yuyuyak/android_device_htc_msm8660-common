@@ -80,7 +80,7 @@ TARGET_NO_HW_VSYNC := true
 BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
 
 # Lights
-TARGET_PROVIDES_LIBLIGHTS := true
+TARGET_PROVIDES_LIBLIGHT := true
 
 # Filesystem
 BOARD_VOLD_MAX_PARTITIONS := 36
