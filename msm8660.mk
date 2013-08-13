@@ -64,21 +64,10 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxAmrEnc
 
-# HDMI
-PRODUCT_PACKAGES += \
-    hdmid
-
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
     lights.msm8660
-
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    VisualizationWallpapers \
-    librs_jni
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
