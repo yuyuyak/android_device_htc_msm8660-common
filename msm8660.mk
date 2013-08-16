@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
-    lights.msm8660
+    lights.msm8660 \
+    libsurfaceflinger_client
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
