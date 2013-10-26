@@ -35,7 +35,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     copybit.msm8660 \
     gralloc.msm8660 \
-    hwcomposer.msm8660
+    hwcomposer.msm8660 \
+    lights.msm8660 \
+    libgenlock \
+    libmemalloc \
+    liboverlay \
+    libqdutils \
+    libtilerenderer
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -43,7 +49,9 @@ PRODUCT_PACKAGES += \
     audio_policy.msm8660 \
     audio.primary.msm8660 \
     audio.usb.default \
-    audio_policy.conf
+    libaudio-resampler \
+    audio_policy.conf \
+    libaudioutils
 
 PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/configs/media_codecs.xml:system/etc/media_codecs.xml \
@@ -67,6 +75,7 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
+    libnetcmdiface \
     lights.msm8660 \
     libsurfaceflinger_client
 
