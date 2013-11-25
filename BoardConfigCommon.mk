@@ -69,6 +69,13 @@ BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Sensors
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+
+# Webkit
+ENABLE_WEBGL := true
+TARGET_FORCE_CPU_UPLOAD := true
+
 # Filesystem
 BOARD_VOLD_MAX_PARTITIONS := 36
 
