@@ -68,6 +68,9 @@ TARGET_QCOM_HDMI_RESOLUTION_AUTO := true
 TARGET_NO_HW_VSYNC := true
 BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
 
+# OpenGL
+BOARD_EGL_WORKAROUND_BUG_10194508 := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
