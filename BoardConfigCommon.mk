@@ -83,6 +83,32 @@ TARGET_DISPLAY_INSECURE_MM_HEAP := true
 TARGET_PROVIDES_LIBLIGHT := true
 TARGET_PROVIDES_LIBLIGHTS := true
 
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/htc/msm8660-common/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    app.te \
+    bluetooth.te \
+    device.te \
+    domain.te \
+    drmserver.te \
+    file_contexts \
+    file.te \
+    hci_init.te \
+    healthd.te \
+    init_shell.te \
+    init.te \
+    keystore.te \
+    kickstart.te \
+    mediaserver.te \
+    rild.te \
+    surfaceflinger.te \
+    system.te \
+    ueventd.te \
+    wpa_socket.te \
+    wpa.te
+
 # Webkit
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
