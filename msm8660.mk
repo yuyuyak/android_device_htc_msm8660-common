@@ -118,5 +118,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera wrapper
 PRODUCT_PACKAGES += \
-    camera.msm8660.so
+    camera.msm8660
 
