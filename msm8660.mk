@@ -110,6 +110,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     com.qc.hardware=true \
     debug.egl.hw=1 \
+    debug.mdpcomp.maxlayer=3 \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
