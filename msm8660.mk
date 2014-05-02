@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libtilerenderer
 
+# Power
+PRODUCT_PACKAGES += \
+    power.msm8660
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
