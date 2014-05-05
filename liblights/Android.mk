@@ -15,10 +15,15 @@
 ifeq ($(TARGET_PROVIDES_LIBLIGHTS),true)
 ifeq ($(BOARD_VENDOR),htc)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
-
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
+
+ifneq ($(TARGET_HAS_NO_BLUE_LED),true)
+
+LOCAL_CFLAGS := -DHAS_BLUE_LED
+
+endif
 
 LOCAL_MODULE := lights.msm8660
 
