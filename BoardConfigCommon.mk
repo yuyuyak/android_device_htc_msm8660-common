@@ -14,8 +14,6 @@
 
 BOARD_VENDOR := htc
 
-TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
-
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
@@ -79,6 +77,9 @@ TARGET_DISPLAY_INSECURE_MM_HEAP := true
 
 # Use CM PowerHAL
 TARGET_POWERHAL_VARIANT := cm
+
+# Includes
+TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
