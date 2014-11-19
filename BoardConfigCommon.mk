@@ -84,6 +84,10 @@ TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Logging
+TARGET_USES_LOGD := false
+
 # Webkit
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
+
