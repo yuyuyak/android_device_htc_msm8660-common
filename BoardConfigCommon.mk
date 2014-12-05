@@ -94,6 +94,9 @@ TARGET_USES_LOGD := false
 TARGET_NEEDS_NON_PIE_SUPPORT := true
 TARGET_DISABLE_ARM_PIE := true
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/htc/msm8660-common/ril
+
 # Webkit
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
