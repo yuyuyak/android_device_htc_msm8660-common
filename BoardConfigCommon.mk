@@ -34,12 +34,10 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := scorpion
 ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Flags
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
-COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 
 TARGET_BOOTANIMATION_USE_RGB565 := true
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -47,10 +45,7 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_QCOM_DISPLAY_VARIANT := caf
-TARGET_QCOM_MEDIA_VARIANT := caf
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
-TARGET_USES_QCOM_BSP := true
 
 # GPS
 BOARD_HAVE_NEW_QC_GPS := true
@@ -72,11 +67,6 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Filesystem
 BOARD_VOLD_MAX_PARTITIONS := 36
 
-# FM Radio
-# 4.2 -> commenting these for audio policy
-#BOARD_HAVE_QCOM_FM := true
-#COMMON_GLOBAL_CFLAGS += -DQCOM_FM_ENABLED
-
 # GPS
 BOARD_USES_QCOM_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
@@ -95,32 +85,6 @@ TARGET_POWERHAL_VARIANT := cm
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
-
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/htc/msm8660-common/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    app.te \
-    bluetooth.te \
-    device.te \
-    domain.te \
-    drmserver.te \
-    file_contexts \
-    file.te \
-    hci_init.te \
-    healthd.te \
-    init_shell.te \
-    init.te \
-    keystore.te \
-    kickstart.te \
-    mediaserver.te \
-    rild.te \
-    surfaceflinger.te \
-    system.te \
-    ueventd.te \
-    wpa_socket.te \
-    wpa.te
 
 # Webkit
 ENABLE_WEBGL := true
