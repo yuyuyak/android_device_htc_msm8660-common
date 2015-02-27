@@ -90,6 +90,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Logging
 TARGET_USES_LOGD := false
 
+# Memory allocation
+MALLOC_IMPL := dlmalloc
+
 # Non-PIE support
 TARGET_NEEDS_NON_PIE_SUPPORT := true
 TARGET_DISABLE_ARM_PIE := true
