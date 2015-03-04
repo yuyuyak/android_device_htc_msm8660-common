@@ -67,7 +67,7 @@ case "$target" in
         ;;
 esac
 
-emmc_boot=`getprop ro.emmc`
+emmc_boot=`getprop ro.boot.emmc`
 case "$emmc_boot"
     in "1")
         chown system /sys/devices/platform/rs300000a7.65536/force_sync
