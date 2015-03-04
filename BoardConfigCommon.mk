@@ -87,6 +87,10 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Logging
 TARGET_USES_LOGD := false
 
+# Non-PIE support
+TARGET_NEEDS_NON_PIE_SUPPORT := true
+TARGET_DISABLE_ARM_PIE := true
+
 # Webkit
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
