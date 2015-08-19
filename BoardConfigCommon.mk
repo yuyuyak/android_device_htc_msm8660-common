@@ -90,6 +90,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Logging
 TARGET_USES_LOGD := false
 
+# Media
+TARGET_NO_ADAPTIVE_PLAYBACK := true
+
 # Memory allocation
 MALLOC_IMPL := dlmalloc
 
