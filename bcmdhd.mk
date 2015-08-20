@@ -26,3 +26,9 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # Broadcom BCM43xx chips are WiFi/BT capable
 BOARD_HAVE_BLUETOOTH_BCM         := true
+
+PRODUCT_PACKAGES += \
+    dhcpcd.conf \
+    libwpa_client \
+    wpa_supplicant \
+    wpa_supplicant.conf
